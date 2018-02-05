@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/pannellum.css"/>
     <script type="text/javascript" src="js/pannellum.js"></script>
     <style>
-    #panorama {
+    #c1,#c2,#c3 {
         margin: 0 auto;
         width: 1024px;
         height: 768px;
@@ -16,17 +16,39 @@
 </head>
 <body>
 
-<div id="panorama"></div>
+<div id="c1"></div>
+<div id="c2"></div>
+<div id="c3"></div>
 <script>
-pannellum.viewer('panorama', {
+pannellum.viewer('c1', {
     "type": "equirectangular",
-    "panorama": "https://linu4u.github.io/3.360view/sample.jpg",
+    "panorama": "c1.jpg",
 	"autoLoad": true,
 	"autoRotate": -2,
     "compass": false,
 
-	"title": "사진방 출사",
-	"author": "리누"
+	"title": "개기디마셔 스키장!",
+	"author": "욤"
+});
+pannellum.viewer('c2', {
+    "type": "equirectangular",
+    "panorama": "c2.jpg",
+	"autoLoad": true,
+	"autoRotate": -2,
+    "compass": false,
+
+    "title": "개기디마셔 스키장!",
+	"author": "욤"
+});
+pannellum.viewer('c3', {
+    "type": "equirectangular",
+    "panorama": "c3.jpg",
+	"autoLoad": true,
+	"autoRotate": -2,
+    "compass": false,
+
+    "title": "개기디마셔 스키장!",
+	"author": "욤"
 });
 </script>
 
